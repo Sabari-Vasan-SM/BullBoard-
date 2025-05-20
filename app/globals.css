@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 20%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 20%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 20%;
+    --primary: 262 83% 58%; /* Material Purple */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 262 60% 95%;
+    --secondary-foreground: 262 83% 58%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 262 60% 95%;
+    --accent-foreground: 262 83% 58%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 262 83% 58%;
+    --radius: 0.75rem; /* More rounded corners for Material Design */
+
+    /* Chart colors - Material Design palette */
+    --chart-1: 262 83% 58%; /* Purple */
+    --chart-2: 214 82% 51%; /* Blue */
+    --chart-3: 176 100% 42%; /* Teal */
+    --chart-4: 122 39% 49%; /* Green */
+    --chart-5: 36 100% 50%; /* Orange */
+  }
+
+  .dark {
+    --background: 0 0% 12%;
+    --foreground: 0 0% 95%;
+    --card: 0 0% 16%;
+    --card-foreground: 0 0% 95%;
+    --popover: 0 0% 16%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 262 30% 25%;
+    --secondary-foreground: 0 0% 95%;
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 65%;
+    --accent: 262 30% 25%;
+    --accent-foreground: 0 0% 95%;
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 0 0% 95%;
+    --border: 0 0% 25%;
+    --input: 0 0% 25%;
+    --ring: 262 83% 58%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Add Material Design elevation shadows */
+@layer components {
+  .material-card {
+    @apply shadow-md hover:shadow-lg transition-shadow duration-300;
+  }
+
+  .material-button {
+    @apply rounded-full shadow-sm hover:shadow transition-all duration-300;
+  }
+}
