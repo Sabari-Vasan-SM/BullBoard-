@@ -6,7 +6,7 @@ A responsive and dynamic Stock Market Dashboard built with React JS, styled usin
 
 
 🚀 Features
-⚛️ Built with React (JavaScript – no TypeScript)
+⚛️ Built with React 
 
 🎨 UI styled using Material UI (MUI v5) components
 
