@@ -8,7 +8,7 @@ A responsive and dynamic Stock Market Dashboard built with React JS, styled usin
 🚀 Features
 ⚛️ Built with React 
 
-🎨 UI styled using Material UI (MUI v5) components
+🎨 UI styled using material UI (MUI v5) components
 
 📈 Visualizations with Bar Graphs, Line Charts, Pie Charts, and Histograms
 
@@ -31,5 +31,6 @@ Histograms for price distribution
 🧭 Dashboard with multiple customizable widgets
 
 📂 Modular and clean folder structure
+
 
 
